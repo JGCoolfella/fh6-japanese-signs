@@ -1,0 +1,1554 @@
+{
+ "saved": "2026-10-10T18:57:59",
+ "note": "Swaps switched off on request (only konbinis + UNIQLO kept). Re-enable a brand in enabled_brands.json, or a single sign in enabled_ids.",
+ "signs": {
+  "P005": {
+   "original_sign": "Maruyama Store",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shop_aboard_01_a5_bclr",
+   "where": "x341-683 y0-512"
+  },
+  "P007": {
+   "original_sign": "Nakaya",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shop_aboard_01_a5_bclr",
+   "where": "x0-341 y512-1024"
+  },
+  "P011": {
+   "original_sign": "Tatsu",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shop_aboard_01_a6_bclr",
+   "where": "x341-683 y0-256"
+  },
+  "P013": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_aboard_01_a6_bclr",
+   "where": "x0-341 y256-512"
+  },
+  "P020": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_aboard_01_a8_bclr",
+   "where": "x341-683 y0-512"
+  },
+  "P027": {
+   "original_sign": "Maruyama Store",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shop_vertical_02_a5_bclr",
+   "where": "x170-341 y0-1024"
+  },
+  "P029": {
+   "original_sign": "Medi Pharmacy 薬",
+   "was_swapped_to": "Welcia",
+   "source_texture": "sgn_gbl_shop_vertical_02_a6_bclr",
+   "where": "x0-170 y0-1024"
+  },
+  "P030": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_vertical_02_a6_bclr",
+   "where": "x170-341 y0-1024"
+  },
+  "P043": {
+   "original_sign": "Maruyama Store",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_01_a5_bclr",
+   "where": "x256-512 y0-512"
+  },
+  "P045": {
+   "original_sign": "Nakaya",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_01_a5_bclr",
+   "where": "x768-1024 y0-512"
+  },
+  "P047": {
+   "original_sign": "Tatsu",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_01_a6_bclr",
+   "where": "x256-512 y0-512"
+  },
+  "P049": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_01_a6_bclr",
+   "where": "x768-1024 y0-512"
+  },
+  "P050": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_02_a6_bclr",
+   "where": "x0-256 y0-512"
+  },
+  "P052": {
+   "original_sign": "Molecule",
+   "was_swapped_to": "ENEOS",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_02_a6_bclr",
+   "where": "x512-768 y0-512"
+  },
+  "P053": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shops_vinyl_poster_02_a6_bclr",
+   "where": "x768-1024 y0-512"
+  },
+  "P065": {
+   "original_sign": "Tomitama",
+   "was_swapped_to": "Tomica",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x0-1024 y0-650"
+  },
+  "P066": {
+   "original_sign": "Owner's",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x1024-2048 y0-650"
+  },
+  "P067": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x0-1024 y650-1300"
+  },
+  "P068": {
+   "original_sign": "PRAV",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x1024-2048 y650-1300"
+  },
+  "P069": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x0-1024 y1300-2048"
+  },
+  "P070": {
+   "original_sign": "Swizzer",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_a_bclr",
+   "where": "x1024-2048 y1300-2048"
+  },
+  "P071": {
+   "original_sign": "Vaneso Gold",
+   "was_swapped_to": "BOSS",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_b_bclr",
+   "where": "x0-1024 y0-650"
+  },
+  "P073": {
+   "original_sign": "Midori Bank",
+   "was_swapped_to": "SMBC",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_b_bclr",
+   "where": "x0-1024 y650-1300"
+  },
+  "P074": {
+   "original_sign": "Brass Harbor",
+   "was_swapped_to": "Kirin",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_b_bclr",
+   "where": "x1024-2048 y650-1300"
+  },
+  "P075": {
+   "original_sign": "ON mobile (phone ad)",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_b_bclr",
+   "where": "x0-1024 y1300-2048"
+  },
+  "P076": {
+   "original_sign": "Flowzoil",
+   "was_swapped_to": "Motul",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_b_bclr",
+   "where": "x1024-2048 y1300-2048"
+  },
+  "P077": {
+   "original_sign": "ON mobile (phone ad)",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_c_bclr",
+   "where": "x0-683 y0-1024"
+  },
+  "P078": {
+   "original_sign": "Midori Bank",
+   "was_swapped_to": "SMBC",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_c_bclr",
+   "where": "x683-1365 y0-1024"
+  },
+  "P080": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_c_bclr",
+   "where": "x0-683 y1024-2048"
+  },
+  "P081": {
+   "original_sign": "Brass Harbor",
+   "was_swapped_to": "Kirin",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_c_bclr",
+   "where": "x683-1365 y1024-2048"
+  },
+  "P083": {
+   "original_sign": "ON mobile",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x0-683 y0-1024"
+  },
+  "P084": {
+   "original_sign": "PRAV",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x683-1365 y0-1024"
+  },
+  "P085": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x1365-2048 y0-1024"
+  },
+  "P086": {
+   "original_sign": "Swizzer",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x0-683 y1024-2048"
+  },
+  "P087": {
+   "original_sign": "Tomitama",
+   "was_swapped_to": "Tomica",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x683-1365 y1024-2048"
+  },
+  "P088": {
+   "original_sign": "Owner's",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_d_bclr",
+   "where": "x1365-2048 y1024-2048"
+  },
+  "P089": {
+   "original_sign": "Medi Pharmacy 薬",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x0-683 y0-683"
+  },
+  "P090": {
+   "original_sign": "PRAV",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x683-1365 y0-683"
+  },
+  "P091": {
+   "original_sign": "Swizzer",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x1365-2048 y0-683"
+  },
+  "P092": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x0-683 y683-1365"
+  },
+  "P093": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x683-1365 y683-1365"
+  },
+  "P094": {
+   "original_sign": "Moriya",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x1365-2048 y683-1365"
+  },
+  "P095": {
+   "original_sign": "Midori Bank",
+   "was_swapped_to": "SMBC",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x0-683 y1365-2048"
+  },
+  "P096": {
+   "original_sign": "ON mobile",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x683-1365 y1365-2048"
+  },
+  "P097": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_square_bclr",
+   "where": "x1365-2048 y1365-2048"
+  },
+  "P098": {
+   "original_sign": "ON mobile",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_horizontal_bclr",
+   "where": "x0-2048 y0-410"
+  },
+  "P099": {
+   "original_sign": "Kakimoto Takashi",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_horizontal_bclr",
+   "where": "x0-2048 y410-742"
+  },
+  "P100": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_horizontal_bclr",
+   "where": "x0-2048 y742-1260"
+  },
+  "P101": {
+   "original_sign": "Moriya",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_horizontal_bclr",
+   "where": "x0-2048 y1260-1560"
+  },
+  "P102": {
+   "original_sign": "Medi Pharmacy 薬",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_horizontal_bclr",
+   "where": "x0-2048 y1560-2048"
+  },
+  "P105": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_vertical_b_bclr",
+   "where": "x1365-2048 y0-2048"
+  },
+  "P106": {
+   "original_sign": "Moriya 森屋",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_vertical_bclr",
+   "where": "x0-683 y0-2048"
+  },
+  "P107": {
+   "original_sign": "Medi Pharmacy 薬",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_vertical_bclr",
+   "where": "x683-1365 y0-2048"
+  },
+  "P108": {
+   "original_sign": "Midori Bank",
+   "was_swapped_to": "SMBC",
+   "source_texture": "tex_cty_decal_akih_billbrd_atlas_01_vertical_bclr",
+   "where": "x1365-2048 y0-2048"
+  },
+  "P109": {
+   "original_sign": "ON mobile (phone ad)",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_gbl_billboard_01_a_billboard_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P110": {
+   "original_sign": "Flowzoil",
+   "was_swapped_to": "Motul",
+   "source_texture": "sgn_gbl_billboard_01_b_billboard_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P111": {
+   "original_sign": "Tomitama",
+   "was_swapped_to": "Tomica",
+   "source_texture": "sgn_gbl_billboard_01_c_billboard_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P113": {
+   "original_sign": "Tatsu",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sng_gbl_billboard_01_e_xsummerx_bclr",
+   "where": "x0-2048 y0-1024"
+  },
+  "P114": {
+   "original_sign": "Techsports Racing",
+   "was_swapped_to": "Spoon",
+   "source_texture": "sgn_gbl_crct_billboard_01_a_feature_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P115": {
+   "original_sign": "Prorata Wheels",
+   "was_swapped_to": "RAYS",
+   "source_texture": "sgn_gbl_crct_billboard_01_b_feature_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P116": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "sgn_gbl_crct_billboard_01_c_feature_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P118": {
+   "original_sign": "turbopod",
+   "was_swapped_to": "HKS",
+   "source_texture": "sgn_gbl_crct_billboard_01_e_feature_xsummerx_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "P119": {
+   "original_sign": "Techsports Racing",
+   "was_swapped_to": "Spoon",
+   "source_texture": "sgn_gbl_billboard_grassroute_01_abcd_bclr",
+   "where": "x0-512 y0-256"
+  },
+  "P120": {
+   "original_sign": "Prorata Wheels",
+   "was_swapped_to": "RAYS",
+   "source_texture": "sgn_gbl_billboard_grassroute_01_abcd_bclr",
+   "where": "x0-512 y256-512"
+  },
+  "P121": {
+   "original_sign": "sybil",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "sgn_gbl_billboard_grassroute_01_abcd_bclr",
+   "where": "x0-512 y512-768"
+  },
+  "P129": {
+   "original_sign": "GAME (arcade)",
+   "was_swapped_to": "Taito Station",
+   "source_texture": "sgn_gbl_board_grassroute_01_efgh_bclr",
+   "where": "x0-512 y512-768"
+  },
+  "P130": {
+   "original_sign": "Moriya",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_board_grassroute_01_efgh_bclr",
+   "where": "x0-512 y768-1024"
+  },
+  "P135": {
+   "original_sign": "Prorata Wheels",
+   "was_swapped_to": "RAYS",
+   "source_texture": "sgn_cty_billboard_rect_01_a_bclr",
+   "where": "x2048-4096 y1024-2048"
+  },
+  "P137": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "sgn_cty_billboard_sqre_lrge_01_a_bclr",
+   "where": "x1024-2048 y0-1024"
+  },
+  "P140": {
+   "original_sign": "Prorata Wheels",
+   "was_swapped_to": "RAYS",
+   "source_texture": "sgn_cty_billboard_sqre_x2_01_a_bclr",
+   "where": "x0-1024 y0-1024"
+  },
+  "P145": {
+   "original_sign": "fizi PoP!",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "sgn_cty_billboard_sqre_x2_01_a_bclr",
+   "where": "x1024-2048 y2048-3072"
+  },
+  "P163": {
+   "original_sign": "Medi Pharmacy 薬 (hanging)",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x205-410 y0-148"
+  },
+  "P164": {
+   "original_sign": "Medi Pharmacy メディ薬局 strip",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x205-614 y148-205"
+  },
+  "P165": {
+   "original_sign": "ON mobile",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x614-819 y0-205"
+  },
+  "P167": {
+   "original_sign": "GAME (arcade)",
+   "was_swapped_to": "Taito Station",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x0-205 y205-410"
+  },
+  "P170": {
+   "original_sign": "Medi Pharmacy 薬",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x0-205 y410-614"
+  },
+  "P171": {
+   "original_sign": "Moriya",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x614-819 y410-614"
+  },
+  "P172": {
+   "original_sign": "Kakimoto Takashi 薬",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x0-205 y614-819"
+  },
+  "P174": {
+   "original_sign": "ラーメン真 Ramen Shin",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x614-819 y717-819"
+  },
+  "P178": {
+   "original_sign": "Nakaya",
+   "was_swapped_to": "Nakau",
+   "source_texture": "tex_gbl_fittings_com_04_a_bclr",
+   "where": "x614-819 y819-1024"
+  },
+  "P180": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x63-188 y104-309"
+  },
+  "P181": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x336-488 y65-334"
+  },
+  "P182": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "Autobacs",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x566-717 y65-130"
+  },
+  "P186": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "Welcia",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x451-504 y347-420"
+  },
+  "P187": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x332-470 y441-547"
+  },
+  "P192": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "Nakau",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x79-175 y519-647"
+  },
+  "P194": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x978-1022 y686-744"
+  },
+  "P195": {
+   "original_sign": "window sticker",
+   "was_swapped_to": "docomo",
+   "source_texture": "tex_gbl_fittings_com_01_a_bclr",
+   "where": "x253-1024 y759-1015"
+  },
+  "P200": {
+   "original_sign": "Maruyama Store マルヤマストア (coastal store)",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "bld_cst_comm_03_a_feature_xsummerx_bclr",
+   "where": "x293-645 y0-910"
+  },
+  "P201": {
+   "original_sign": "Maruyama Store fascia",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "bld_gbl_comm_02_a_decal_bclr",
+   "where": "x0-1024 y0-275"
+  },
+  "P202": {
+   "original_sign": "Maruyama Store wall lettering",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "bld_gbl_comm_02_a_decal_bclr",
+   "where": "x0-1024 y290-500"
+  },
+  "P220": {
+   "original_sign": "Molecule gas station",
+   "was_swapped_to": "ENEOS",
+   "source_texture": "bld_gbl_comm_gstation_01_a_decal_bclr",
+   "where": "x0-512 y0-512"
+  },
+  "P228": {
+   "original_sign": "Molecule pylon",
+   "was_swapped_to": "ENEOS",
+   "source_texture": "sgn_cty_digital_02_a_xsummerx_bclr",
+   "where": "x0-512 y0-512"
+  },
+  "P247": {
+   "original_sign": "Yuji's Auto",
+   "was_swapped_to": "Autobacs",
+   "source_texture": "sgn_gbl_yuji_auto_01_a_bclr",
+   "where": "x0-1024 y0-512"
+  },
+  "T010": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shop_aboard_01_a2_pack_maskrgba",
+   "where": "cell col 2 row 1 of 3x1"
+  },
+  "T017": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shop_hrzntl_6m_01_a2_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T023": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shop_square_01_a2_pack_maskrgba",
+   "where": "cell col 2 row 1 of 2x2"
+  },
+  "T027": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shop_vertical_01_a1_pack_maskrgba",
+   "where": "cell col 3 row 1 of 4x1"
+  },
+  "T040": {
+   "original_sign": "",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "sgn_cty_shop_vertical_02_a3_pack_maskrgba",
+   "where": "cell col 2 row 1 of 3x1"
+  },
+  "T044": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shop_vinyl_3m_01_a2_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T056": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "sgn_cty_shops_vinyl_6m_01_a2_pack_maskrgba",
+   "where": "cell col 1 row 5 of 1x5"
+  },
+  "T062": {
+   "original_sign": "",
+   "was_swapped_to": "Taito Station (your image)",
+   "source_texture": "sgn_cty_shops_vinyl_poster_01_a1_mask",
+   "where": "cell col 4 row 1 of 4x2"
+  },
+  "T065": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_shops_vinyl_poster_01_a2_pack_maskrgba",
+   "where": "cell col 2 row 1 of 4x1"
+  },
+  "T074": {
+   "original_sign": "",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T075": {
+   "original_sign": "",
+   "was_swapped_to": "Japan Post",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T076": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 1 of 1x3"
+  },
+  "T077": {
+   "original_sign": "",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T080": {
+   "original_sign": "",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a7_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T081": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a7_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T082": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a8_pack_maskrgba",
+   "where": "cell col 1 row 1 of 1x3"
+  },
+  "T083": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "sgn_gbl_shop_hrzntl_6m_01_a8_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T087": {
+   "original_sign": "",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shop_square_01_a5_pack_maskrgba",
+   "where": "cell col 2 row 1 of 2x2"
+  },
+  "T088": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shop_square_01_a5_pack_maskrgba",
+   "where": "cell col 2 row 2 of 2x2"
+  },
+  "T090": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shop_square_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 2 of 2x2"
+  },
+  "T091": {
+   "original_sign": "",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shop_square_01_a6_pack_maskrgba",
+   "where": "cell col 2 row 1 of 2x2"
+  },
+  "T092": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_square_01_a6_pack_maskrgba",
+   "where": "cell col 2 row 2 of 2x2"
+  },
+  "T093": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "sgn_gbl_shop_square_01_a7_pack_maskrgba",
+   "where": "cell col 1 row 1 of 2x2"
+  },
+  "T094": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "sgn_gbl_shop_square_01_a7_pack_maskrgba",
+   "where": "cell col 2 row 1 of 2x2"
+  },
+  "T096": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shop_vertical_01_a4_pack_maskrgba",
+   "where": "cell col 1 row 1 of 4x1"
+  },
+  "T099": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shop_vertical_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 1 of 4x1"
+  },
+  "T105": {
+   "original_sign": "",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T106": {
+   "original_sign": "",
+   "was_swapped_to": "Japan Post",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T107": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 1 of 1x3"
+  },
+  "T108": {
+   "original_sign": "",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T109": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a6_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T111": {
+   "original_sign": "",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a7_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T112": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a7_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x3"
+  },
+  "T113": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a8_pack_maskrgba",
+   "where": "cell col 1 row 1 of 1x3"
+  },
+  "T114": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "sgn_gbl_shop_vinyl_3m_01_a8_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x3"
+  },
+  "T121": {
+   "original_sign": "",
+   "was_swapped_to": "Maruetsu",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a4_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x5"
+  },
+  "T122": {
+   "original_sign": "",
+   "was_swapped_to": "Japan Post",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a4_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x5"
+  },
+  "T123": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a4_pack_maskrgba",
+   "where": "cell col 1 row 4 of 1x5"
+  },
+  "T124": {
+   "original_sign": "",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a4_pack_maskrgba",
+   "where": "cell col 1 row 5 of 1x5"
+  },
+  "T126": {
+   "original_sign": "",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 2 of 1x5"
+  },
+  "T127": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 3 of 1x5"
+  },
+  "T128": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_gbl_shops_vinyl_6m_01_a5_pack_maskrgba",
+   "where": "cell col 1 row 4 of 1x5"
+  },
+  "T172": {
+   "original_sign": "",
+   "was_swapped_to": "Taito Station (your image)",
+   "source_texture": "tex_gbl_sgn_com_billboard_04_a_atlas1_pack_maskrgba",
+   "where": "cell col 1 row 1 of 2x2"
+  },
+  "T181": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "tex_gbl_sgn_com_billboard_05_a_atlas2_pack_maskrgba",
+   "where": "cell col 1 row 1 of 3x1"
+  },
+  "T182": {
+   "original_sign": "",
+   "was_swapped_to": "Taito Station (your image)",
+   "source_texture": "tex_gbl_sgn_com_billboard_05_a_atlas2_pack_maskrgba",
+   "where": "cell col 2 row 1 of 3x1"
+  },
+  "T183": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "tex_gbl_sgn_com_billboard_05_a_atlas2_pack_maskrgba",
+   "where": "cell col 3 row 1 of 3x1"
+  },
+  "T184": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank (your image)",
+   "source_texture": "tex_gbl_sgn_com_billboard_06_a_pack_maskrgba",
+   "where": "cell col 1 row 1 of 1x3"
+  },
+  "D005": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 1 col 5 of 6x6"
+  },
+  "D007": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 2 col 1 of 6x6"
+  },
+  "D010": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 2 col 4 of 6x6"
+  },
+  "D011": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 2 col 5 of 6x6"
+  },
+  "D012": {
+   "original_sign": "",
+   "was_swapped_to": "Taito Station",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 2 col 6 of 6x6"
+  },
+  "D013": {
+   "original_sign": "",
+   "was_swapped_to": "Japan Post",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 3 col 1 of 6x6"
+  },
+  "D020": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 4 col 2 of 6x6"
+  },
+  "D023": {
+   "original_sign": "",
+   "was_swapped_to": "Ichiran",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 4 col 5 of 6x6"
+  },
+  "D026": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 5 col 2 of 6x6"
+  },
+  "D029": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 5 col 5 of 6x6"
+  },
+  "D030": {
+   "original_sign": "",
+   "was_swapped_to": "Gyoza no Ohsho",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 5 col 6 of 6x6"
+  },
+  "D032": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 6 col 2 of 6x6"
+  },
+  "D035": {
+   "original_sign": "",
+   "was_swapped_to": "Nakau",
+   "source_texture": "sgn_cty_billboard_sqre_x9_01_a_pack_maskrgba",
+   "where": "tile row 6 col 5 of 6x6"
+  },
+  "S001": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 0 (64px)"
+  },
+  "S003": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S004": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S005": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 4 (64px)"
+  },
+  "S006": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 5 (64px)"
+  },
+  "S007": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 0 col 6 (64px)"
+  },
+  "S009": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S010": {
+   "original_sign": "",
+   "was_swapped_to": "Motul",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 1 (64px)"
+  },
+  "S011": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S012": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 3 (64px)"
+  },
+  "S013": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 4 (64px)"
+  },
+  "S014": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S015": {
+   "original_sign": "",
+   "was_swapped_to": "Tomica",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S016": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 1 col 7 (64px)"
+  },
+  "S017": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 0 (64px)"
+  },
+  "S018": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S019": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 2 (64px)"
+  },
+  "S020": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S021": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 4 (64px)"
+  },
+  "S022": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 5 (64px)"
+  },
+  "S023": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 6 (64px)"
+  },
+  "S024": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 2 col 7 (64px)"
+  },
+  "S025": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 3 col 0 (64px)"
+  },
+  "S026": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 3 col 1 (64px)"
+  },
+  "S027": {
+   "original_sign": "",
+   "was_swapped_to": "Kirin",
+   "source_texture": "city_poi_decals_atlas_a_diff",
+   "where": "cell row 3 col 2 (64px)"
+  },
+  "S028": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 0 (64px)"
+  },
+  "S029": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 1 (64px)"
+  },
+  "S030": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S031": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S032": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 4 (64px)"
+  },
+  "S033": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 5 (64px)"
+  },
+  "S034": {
+   "original_sign": "",
+   "was_swapped_to": "BOSS",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 0 col 6 (64px)"
+  },
+  "S036": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S037": {
+   "original_sign": "",
+   "was_swapped_to": "BOSS",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 1 (64px)"
+  },
+  "S038": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S039": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 3 (64px)"
+  },
+  "S040": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 4 (64px)"
+  },
+  "S041": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S042": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S045": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S046": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 2 col 2 (64px)"
+  },
+  "S047": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S048": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_b_diff",
+   "where": "cell row 2 col 5 (64px)"
+  },
+  "S049": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 0 (64px)"
+  },
+  "S050": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 1 (64px)"
+  },
+  "S051": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S052": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S054": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 5 (64px)"
+  },
+  "S055": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 0 col 6 (64px)"
+  },
+  "S057": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S059": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S060": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 3 (64px)"
+  },
+  "S061": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 4 (64px)"
+  },
+  "S062": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S063": {
+   "original_sign": "",
+   "was_swapped_to": "Yellow Hat",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S065": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 2 col 0 (64px)"
+  },
+  "S067": {
+   "original_sign": "",
+   "was_swapped_to": "Kirin",
+   "source_texture": "city_poi_decals_atlas_c_diff",
+   "where": "cell row 2 col 2 (64px)"
+  },
+  "S071": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 0 col 1 (64px)"
+  },
+  "S072": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S073": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S074": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 0 col 5 (64px)"
+  },
+  "S075": {
+   "original_sign": "",
+   "was_swapped_to": "Kirin",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 0 col 6 (64px)"
+  },
+  "S077": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S078": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 1 col 1 (64px)"
+  },
+  "S081": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 1 col 4 (64px)"
+  },
+  "S082": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S083": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S086": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S088": {
+   "original_sign": "",
+   "was_swapped_to": "Mitsuya Cider",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S089": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_d_diff",
+   "where": "cell row 2 col 5 (64px)"
+  },
+  "S090": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 0 col 0 (64px)"
+  },
+  "S091": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S092": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S095": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S096": {
+   "original_sign": "",
+   "was_swapped_to": "Kirin",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 1 (64px)"
+  },
+  "S097": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S098": {
+   "original_sign": "",
+   "was_swapped_to": "Motul",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 3 (64px)"
+  },
+  "S099": {
+   "original_sign": "",
+   "was_swapped_to": "BOSS",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 4 (64px)"
+  },
+  "S100": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S101": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S103": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 2 col 0 (64px)"
+  },
+  "S105": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 2 col 2 (64px)"
+  },
+  "S106": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S107": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_e_diff",
+   "where": "cell row 2 col 5 (64px)"
+  },
+  "S108": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 0 col 2 (64px)"
+  },
+  "S109": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 0 col 3 (64px)"
+  },
+  "S110": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 0 col 6 (64px)"
+  },
+  "S111": {
+   "original_sign": "",
+   "was_swapped_to": "C.C. Lemon",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 0 (64px)"
+  },
+  "S112": {
+   "original_sign": "",
+   "was_swapped_to": "SMBC",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 1 (64px)"
+  },
+  "S113": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S114": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 3 (64px)"
+  },
+  "S115": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 5 (64px)"
+  },
+  "S116": {
+   "original_sign": "",
+   "was_swapped_to": "BOSS",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S118": {
+   "original_sign": "",
+   "was_swapped_to": "Matsumoto Kiyoshi",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 2 col 0 (64px)"
+  },
+  "S119": {
+   "original_sign": "",
+   "was_swapped_to": "Kirin",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S120": {
+   "original_sign": "",
+   "was_swapped_to": "BOSS",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 2 col 2 (64px)"
+  },
+  "S121": {
+   "original_sign": "",
+   "was_swapped_to": "Welcia",
+   "source_texture": "city_poi_decals_atlas_f_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S122": {
+   "original_sign": "",
+   "was_swapped_to": "Motul",
+   "source_texture": "city_poi_decals_atlas_g_diff",
+   "where": "cell row 1 col 2 (64px)"
+  },
+  "S123": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_g_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S125": {
+   "original_sign": "",
+   "was_swapped_to": "docomo",
+   "source_texture": "city_poi_decals_atlas_g_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S126": {
+   "original_sign": "",
+   "was_swapped_to": "SoftBank",
+   "source_texture": "city_poi_decals_atlas_g_diff",
+   "where": "cell row 2 col 3 (64px)"
+  },
+  "S128": {
+   "original_sign": "",
+   "was_swapped_to": "Motul",
+   "source_texture": "city_poi_decals_atlas_h_diff",
+   "where": "cell row 1 col 6 (64px)"
+  },
+  "S130": {
+   "original_sign": "",
+   "was_swapped_to": "BEAMS",
+   "source_texture": "city_poi_decals_atlas_h_diff",
+   "where": "cell row 2 col 1 (64px)"
+  },
+  "S131": {
+   "original_sign": "",
+   "was_swapped_to": "Seiyu",
+   "source_texture": "city_poi_decals_atlas_h_diff",
+   "where": "cell row 2 col 3 (64px)"
+  }
+ }
+}
