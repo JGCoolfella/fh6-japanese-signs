@@ -1,0 +1,46 @@
+# ---- game-derived data: never commit (extracted/modified game files, previews of them) ----
+extract/
+build/
+backup/
+dist/
+preview/
+overview/
+ref/
+installed.json
+GeoChunk*.txt
+*.pb
+*.modelbin
+*.minizip
+*.dds
+catalogue/*
+!catalogue/id_registry.json
+!catalogue/id_registry_seed.json
+!catalogue/choices/
+catalogue/choices/*
+!catalogue/choices/choices.json
+!catalogue/choices/enabled_brands.json
+!catalogue/choices/disabled_swaps.json
+!catalogue/choices/*_custom.png
+
+# ---- third-party binaries (download them, see docs/DEVELOPING.md) ----
+tools/texconv.exe
+tools/texconv/
+tools/FTS/
+tools/*.zip
+tools/*.exe
+
+# ---- logos without a free licence (fair use on Wikipedia / unknown source) ----
+assets/autobacs_logo*.png
+assets/ichiran_*.png
+assets/starbucks_logo.png
+assets/7eleven_*.png
+assets/lawson_round.png
+
+# ---- local / generated ----
+patcher/build/
+patcher/dist/
+__pycache__/
+*.pyc
+*_log.txt
+*.tmp
+catalogue/choices/state.json

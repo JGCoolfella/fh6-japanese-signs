@@ -1,0 +1,57 @@
+{
+ "lawson_station": [
+  254,
+  254,
+  254
+ ],
+ "mitsuya_sticker": [
+  246,
+  246,
+  246
+ ],
+ "softbank": [
+  246,
+  246,
+  246
+ ],
+ "starbucks_word": [
+  246,
+  246,
+  246
+ ],
+ "taito_game": [
+  254,
+  6,
+  6
+ ],
+ "taito_wide": [
+  214,
+  46,
+  38
+ ],
+ "tomica_sticker": [
+  246,
+  246,
+  246
+ ],
+ "uniqlo_pair": [
+  254,
+  254,
+  254
+ ],
+ "uniqlo_pair_wide": [
+  254,
+  254,
+  254
+ ],
+ "uniqlo_square": [
+  246,
+  246,
+  246
+ ],
+ "uniqlo_stack": [
+  254,
+  254,
+  254
+ ]
+}

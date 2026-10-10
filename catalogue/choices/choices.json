@@ -1,0 +1,407 @@
+{
+ "P001": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P021": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P022": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P023": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P031": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P038": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P039": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P046": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P061": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P079": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P129": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P142": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P157": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P167": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P175": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P211": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P212": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P214": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P215": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 270
+ },
+ "P216": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 270
+ },
+ "S011": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S044": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S053": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S055": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S057": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S066": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S068": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S069": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S070": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S071": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S072": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S073": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S079": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "S083": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T062": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T071": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T089": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T102": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T117": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T118": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T129": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T172": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T176": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T178": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T179": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T180": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T182": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T184": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T185": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T186": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P197": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 90
+ },
+ "T079": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T073": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P220": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T125": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P082": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P002": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P041": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P051": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P058": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P072": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P173": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P177": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P179": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P188": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P190": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "T020": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "T046": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "T072": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "T103": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "D017": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "D025": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S058": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S080": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S087": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S093": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S104": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "S132": {
+  "fit": "logo",
+  "rotate": 0,
+  "choice": "keep original"
+ },
+ "P056": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "P119": {
+  "choice": "keep original",
+  "fit": "logo",
+  "rotate": 0
+ },
+ "T104": {
+  "choice": "custom",
+  "fit": "logo",
+  "rotate": 0
+ }
+}

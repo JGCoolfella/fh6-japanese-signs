@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FH6 Sign Catalogue</title>
+<style>
+:root {
+  --bg: #f4f4f2; --panel: #ffffff; --ink: #1b1b1d; --muted: #6a6a70; --line: #dcdcd8;
+  --accent: #0a66c2; --ok: #1d7a3a; --okbg: #e3f3e8; --warn: #8a5a00; --warnbg: #fdf1d8; --img: #2a2a2e;
+  --cust: #7a3fc2; --custbg: #efe6fb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161618; --panel: #202024; --ink: #ececee; --muted: #9a9aa2; --line: #34343a;
+    --accent: #5aa2ff; --ok: #7ad69a; --okbg: #1d3326; --warn: #f0c060; --warnbg: #3a2f14; --img: #111113;
+    --cust: #c4a0ff; --custbg: #2e2440;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161618; --panel: #202024; --ink: #ececee; --muted: #9a9aa2; --line: #34343a;
+  --accent: #5aa2ff; --ok: #7ad69a; --okbg: #1d3326; --warn: #f0c060; --warnbg: #3a2f14; --img: #111113;
+  --cust: #c4a0ff; --custbg: #2e2440;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); padding: 10px 16px; }
+h1 { font-size: 18px; margin: 0 0 6px; }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.bar input[type=search] { flex: 1 1 220px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.bar select, .bar button { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); cursor: pointer; }
+.bar button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.stats { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.where { margin-left: 8px; padding: 1px 8px; border-radius: 10px; }
+.where.ok { background: var(--okbg); color: var(--ok); }
+.where.warn { background: var(--warnbg); color: var(--warn); }
+main { padding: 12px 16px 60px; max-width: 1500px; margin: 0 auto; }
+h2 { font-size: 16px; margin: 26px 0 4px; }
+h3 { font-size: 12px; font-weight: 600; color: var(--muted); margin: 18px 0 8px; font-family: ui-monospace, Consolas, monospace; word-break: break-all; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 10px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.card.chosen { border-color: var(--accent); }
+.card.hascustom { border-color: var(--cust); }
+.card.drop { outline: 2px dashed var(--cust); outline-offset: 2px; }
+.top { display: flex; gap: 8px; align-items: baseline; }
+.id { font-weight: 700; font-size: 16px; font-family: ui-monospace, Consolas, monospace; }
+.label { font-weight: 600; overflow-wrap: anywhere; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.pair.single { grid-template-columns: 1fr; }
+.shot { background: var(--img); border-radius: 4px; display: flex; align-items: center; justify-content: center; min-height: 90px; position: relative; cursor: zoom-in; }
+.shot img, .shot canvas { max-width: 100%; max-height: 220px; display: block; }
+.shot .cap { position: absolute; left: 4px; top: 4px; background: rgba(0,0,0,.6); color: #fff; font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+.swap { font-size: 12px; padding: 2px 8px; border-radius: 10px; background: var(--okbg); color: var(--ok); align-self: flex-start; }
+.wasoff { font-size: 12px; padding: 2px 8px; border-radius: 10px; background: var(--bg); color: var(--muted); border: 1px dashed var(--line); align-self: flex-start; }
+.noswap { font-size: 12px; padding: 2px 8px; border-radius: 10px; background: var(--warnbg); color: var(--warn); align-self: flex-start; }
+.meta { font-size: 11px; color: var(--muted); font-family: ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+.cw img { max-width: 100%; height: 40px; object-fit: contain; object-position: left; display: block; }
+.choice { display: flex; gap: 6px; }
+.choice input { flex: 1; min-width: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.choice button, .custrow button, .custrow label, .custrow select { padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); cursor: pointer; font-size: 12px; }
+.custrow { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.custrow label { color: var(--cust); border-color: var(--cust); }
+.custbox { background: var(--custbg); border-radius: 6px; padding: 6px; display: flex; flex-direction: column; gap: 6px; }
+.custbox .pair .shot { cursor: default; }
+.hint { font-size: 11px; color: var(--muted); }
+#lb { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; align-items: center; justify-content: center; z-index: 10; cursor: zoom-out; padding: 16px; }
+#lb img { max-width: 100%; max-height: 100%; }
+#toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 13px; display: none; z-index: 11; }
+@media (max-width: 420px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>FH6 sign catalogue</h1>
+  <div class="bar">
+    <input type="search" id="q" placeholder="Search ID, sign name, swap, texture…">
+    <select id="sec"></select>
+    <select id="state">
+      <option value="">All signs</option>
+      <option value="swapped">Already swapped</option>
+      <option value="orig">Still original</option>
+      <option value="chosen">I've filled in</option>
+      <option value="open">I haven't filled in</option>
+      <option value="custom">Has my custom image</option>
+      <option value="was">Switched off (was swapped)</option>
+    </select>
+    <button id="exp" class="primary" title="Everything, including your custom images — send me this file">Export my choices</button>
+    <button id="expcsv" title="Text only, no images">Export CSV</button>
+    <button id="imp">Import</button>
+    <input type="file" id="impfile" accept=".json,.csv" hidden>
+  </div>
+  <div class="stats"><span id="stats"></span> <span id="where" class="where"></span></div>
+</header>
+<main id="main"></main>
+<div id="lb"><img alt=""></div>
+<div id="toast"></div>
+<datalist id="brands"></datalist>
+<script>
+const DATA = /*DATA*/;
+const SECTIONS = /*SECTIONS*/;
+const BYID = Object.fromEntries(DATA.map(d => [d.id, d]));
+const KEY = "fh6-sign-choices", FITKEY = "fh6-sign-fit", ROTKEY = "fh6-sign-rot";
+const MAXSIDE = 1600;            // uploaded images are kept up to this size
+let choices = {}, fits = {}, rots = {};
+try { choices = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { choices = {}; }
+try { fits = JSON.parse(localStorage.getItem(FITKEY) || "{}") || {}; } catch (e) { fits = {}; }
+try { rots = JSON.parse(localStorage.getItem(ROTKEY) || "{}") || {}; } catch (e) { rots = {}; }
+// Storage: the local server (tools/catalogue_server.py) saves to _modwork/catalogue/choices on disk;
+// opened as a plain file, everything stays in this browser.
+let SERVER = false;
+function persistLocal() {
+  try { localStorage.setItem(KEY, JSON.stringify(choices)); } catch (e) {}
+  try { localStorage.setItem(FITKEY, JSON.stringify(fits)); } catch (e) {}
+  try { localStorage.setItem(ROTKEY, JSON.stringify(rots)); } catch (e) {}
+}
+const rec = id => ({id, choice: choices[id] || "", fit: fits[id] || "logo", rotate: rots[id] || 0});
+async function post(url, body, type = "application/json") {
+  const r = await fetch(url, {method: "POST", headers: {"Content-Type": type}, body});
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+function persist(id) {
+  if (!SERVER) return persistLocal();
+  const ids = id ? [id] : DATA.map(d => d.id).filter(i => choices[i] || customs[i]);
+  post("/api/choice", JSON.stringify(ids.map(rec))).catch(() => toast("Couldn't save to disk - is the catalogue server still running?"));
+}
+function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => t.style.display = "none", 2600); }
+
+// ---------------------------------------------------------------- custom images (IndexedDB, falls back to memory)
+const customs = {};               // id -> dataURL
+let db = null;
+function idb() {
+  return new Promise(res => {
+    try {
+      const r = indexedDB.open("fh6-sign-catalogue", 1);
+      r.onupgradeneeded = () => r.result.createObjectStore("img");
+      r.onsuccess = () => res(r.result);
+      r.onerror = () => res(null);
+    } catch (e) { res(null); }
+  });
+}
+function idbPut(id, val) {
+  if (!db) return;
+  try { const tx = db.transaction("img", "readwrite"); const st = tx.objectStore("img"); val == null ? st.delete(id) : st.put(val, id); } catch (e) {}
+}
+function idbAll() {
+  return new Promise(res => {
+    if (!db) return res({});
+    try {
+      const out = {}, tx = db.transaction("img", "readonly"), st = tx.objectStore("img"), cur = st.openCursor();
+      cur.onsuccess = () => { const c = cur.result; if (c) { out[c.key] = c.value; c.continue(); } else res(out); };
+      cur.onerror = () => res(out);
+    } catch (e) { res({}); }
+  });
+}
+function readImage(file) {
+  return new Promise((res, rej) => {
+    const url = URL.createObjectURL(file), im = new Image();
+    im.onload = () => {
+      const k = Math.min(1, MAXSIDE / Math.max(im.naturalWidth, im.naturalHeight));
+      const c = document.createElement("canvas");
+      c.width = Math.max(1, Math.round(im.naturalWidth * k)); c.height = Math.max(1, Math.round(im.naturalHeight * k));
+      c.getContext("2d").drawImage(im, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      res(c.toDataURL("image/png"));
+    };
+    im.onerror = () => { URL.revokeObjectURL(url); rej(new Error("not an image")); };
+    im.src = url;
+  });
+}
+async function storeImage(id, dataUrl) {
+  if (!SERVER) { customs[id] = dataUrl; idbPut(id, dataUrl); return; }
+  const blob = await (await fetch(dataUrl)).blob();
+  const r = await post("/api/image?id=" + id, blob, "image/png");
+  customs[id] = r.url;
+}
+async function setCustom(id, file) {
+  if (!file || !file.type.startsWith("image/")) { toast("That isn't an image file"); return; }
+  let dataUrl;
+  try { dataUrl = await readImage(file); } catch (e) { toast("Couldn't read that image"); return; }
+  try {
+    await storeImage(id, dataUrl);
+    if (!choices[id] || choices[id] === "keep original") choices[id] = "custom";
+    if (!fits[id]) fits[id] = "logo";
+    persist(id);
+    refreshCard(id);
+    toast(SERVER ? `Saved ${id}_custom.png to disk` : `Custom image added to ${id}`);
+  } catch (e) { toast("Couldn't save the image to disk - is the catalogue server still running?"); }
+}
+async function removeCustom(id) {
+  if (SERVER) { try { await fetch("/api/image?id=" + id, {method: "DELETE"}); } catch (e) { toast("Couldn't reach the catalogue server"); return; } }
+  delete customs[id]; idbPut(id, null);
+  if (choices[id] === "custom") delete choices[id];
+  delete fits[id]; delete rots[id];
+  persist(id); refreshCard(id);
+}
+async function toDataURL(src) {
+  if (src.startsWith("data:")) return src;
+  const b = await (await fetch(src)).blob();
+  return await new Promise(res => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(b); });
+}
+
+// rough fit preview at the sign's shape: "logo" = centred on a plain background, "fill" = covers the whole sign
+function drawPreview(canvas, id) {
+  const d = BYID[id], src = customs[id];
+  const ref = new Image(), cu0 = new Image();
+  let n = 0;
+  const go = () => {
+    if (++n < 2) return;
+    const r = rots[id] || 0;
+    let cu = cu0;
+    if (r) {
+      const t = document.createElement("canvas"), q = r % 180 !== 0;
+      t.width = q ? cu0.naturalHeight : cu0.naturalWidth; t.height = q ? cu0.naturalWidth : cu0.naturalHeight;
+      const tg = t.getContext("2d"); tg.translate(t.width / 2, t.height / 2); tg.rotate(r * Math.PI / 180);
+      tg.drawImage(cu0, -cu0.naturalWidth / 2, -cu0.naturalHeight / 2);
+      cu = {naturalWidth: t.width, naturalHeight: t.height, el: t};
+    } else cu = {naturalWidth: cu0.naturalWidth, naturalHeight: cu0.naturalHeight, el: cu0};
+    const W = 320, H = Math.max(30, Math.min(320, Math.round(W * ref.naturalHeight / Math.max(1, ref.naturalWidth))));
+    const w = Math.round(H * ref.naturalWidth / Math.max(1, ref.naturalHeight));
+    canvas.width = Math.min(W, w); canvas.height = H;
+    const g = canvas.getContext("2d"), cw = canvas.width, ch = canvas.height;
+    const mode = fits[id] || "logo";
+    if (mode === "fill") {
+      const k = Math.max(cw / cu.naturalWidth, ch / cu.naturalHeight);
+      g.drawImage(cu.el, (cw - cu.naturalWidth * k) / 2, (ch - cu.naturalHeight * k) / 2, cu.naturalWidth * k, cu.naturalHeight * k);
+    } else if (mode === "stretch") {
+      g.drawImage(cu.el, 0, 0, cw, ch);
+    } else {
+      g.fillStyle = "#f2f2f2"; g.fillRect(0, 0, cw, ch);
+      const k = Math.min(cw * 0.84 / cu.naturalWidth, ch * 0.84 / cu.naturalHeight);
+      g.drawImage(cu.el, (cw - cu.naturalWidth * k) / 2, (ch - cu.naturalHeight * k) / 2, cu.naturalWidth * k, cu.naturalHeight * k);
+    }
+  };
+  ref.onload = go; cu0.onload = go;
+  ref.src = d.orig_url; cu0.src = src;
+}
+
+// ---------------------------------------------------------------- page
+const brands = [...new Set(DATA.map(d => d.swap).filter(s => s && !s.startsWith("recoloured") && s !== "modified" && !s.startsWith("BROKEN")))].sort();
+document.getElementById("brands").innerHTML = ["keep original", "custom", ...brands].map(b => `<option value="${b}">`).join("");
+const sec = document.getElementById("sec");
+sec.innerHTML = `<option value="">All sections</option>` + SECTIONS.map(([p, t]) => `<option value="${p}">${p} — ${t.split(" (")[0]}</option>`).join("");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+function custHTML(id) {
+  if (!customs[id]) return "";
+  const f = fits[id] || "logo";
+  return `<div class="custbox">
+    <div class="pair">
+      <div class="shot" data-full="${customs[id]}" style="cursor:zoom-in"><span class="cap">your image</span><img src="${customs[id]}" alt="${id} custom"></div>
+      <div class="shot"><span class="cap">rough fit</span><canvas data-prev="${id}"></canvas></div>
+    </div>
+    <div class="custrow">
+      <select data-fit="${id}">
+        <option value="logo"${f === "logo" ? " selected" : ""}>Logo on a plain background</option>
+        <option value="fill"${f === "fill" ? " selected" : ""}>Fill the whole sign (crop)</option>
+        <option value="stretch"${f === "stretch" ? " selected" : ""}>Whole sign, stretch to fit</option>
+      </select>
+      <button data-rot="${id}" title="Rotate your image 90°">Rotate ↻ ${rots[id] || 0}°</button>
+      <button data-rm="${id}">Remove image</button>
+    </div>
+    <div class="hint">Starting point only — I'll fix scale, colours and resolution when building it.</div>
+  </div>`;
+}
+
+function card(d) {
+  const now = d.now_url
+    ? `<div class="shot" data-full="${d.now_url}"><span class="cap">now</span><img loading="lazy" src="${d.now_url}" alt="${d.id} current"></div>` : "";
+  const swap = d.swap ? `<span class="swap">now: ${esc(d.swap)}</span>` : `<span class="noswap">original (not swapped)</span>`;
+  const was = d.was ? `<span class="wasoff" title="Switched off for now - recorded in choices/disabled_swaps.json">switched off — was: ${esc(d.was)}</span>` : "";
+  const cw = d.cw_url ? `<div class="cw" title="colourways"><img loading="lazy" src="${d.cw_url}" alt="colourways"></div><div class="meta">${d.n_cw} colourways in game</div>` : "";
+  const v = choices[d.id] || "";
+  const cls = (v ? " chosen" : "") + (customs[d.id] ? " hascustom" : "");
+  return `<div class="card${cls}" id="c-${d.id}" data-card="${d.id}">
+    <div class="top"><span class="id">${d.id}</span><span class="label">${esc(d.label || "")}</span></div>
+    <div class="pair${now ? "" : " single"}">
+      <div class="shot" data-full="${d.orig_url}"><span class="cap">original</span><img loading="lazy" src="${d.orig_url}" alt="${d.id} original"></div>${now}
+    </div>
+    ${swap}${was}${cw}
+    <div class="meta">${esc(d.source)} · ${esc(d.where)}</div>
+    <div class="choice"><input list="brands" data-id="${d.id}" placeholder="Swap to… / notes (or 'keep original')" value="${esc(v)}">
+      <button data-keep="${d.id}">keep</button></div>
+    <div class="custrow"><label>Custom image…<input type="file" accept="image/*" data-up="${d.id}" hidden></label>
+      <span class="hint">or drag an image onto this card, or paste one while typing in its box</span></div>
+    <div data-cust="${d.id}">${custHTML(d.id)}</div>
+  </div>`;
+}
+
+function hydrate(root) {
+  root.querySelectorAll("canvas[data-prev]").forEach(c => drawPreview(c, c.dataset.prev));
+}
+function refreshCard(id) {
+  const el = document.getElementById("c-" + id);
+  if (el) { const tmp = document.createElement("div"); tmp.innerHTML = card(BYID[id]); const n = tmp.firstElementChild; el.replaceWith(n); hydrate(n); }
+  stats();
+}
+
+let shownCount = 0;
+function stats() {
+  const done = DATA.filter(d => choices[d.id]).length, nc = Object.keys(customs).length;
+  document.getElementById("stats").textContent =
+    `${DATA.length} signs · ${DATA.filter(d => d.swap).length} already swapped · showing ${shownCount} · you've filled in ${done}` + (nc ? ` · ${nc} custom image${nc > 1 ? "s" : ""}` : "");
+}
+
+function render() {
+  const q = document.getElementById("q").value.toLowerCase().trim();
+  const s = sec.value, st = document.getElementById("state").value;
+  const shown = DATA.filter(d => {
+    if (s && d.section !== s) return false;
+    if (st === "swapped" && !d.swap) return false;
+    if (st === "orig" && d.swap) return false;
+    if (st === "chosen" && !choices[d.id]) return false;
+    if (st === "open" && choices[d.id]) return false;
+    if (st === "custom" && !customs[d.id]) return false;
+    if (st === "was" && !d.was) return false;
+    if (q && !(d.id.toLowerCase() + " " + (d.label || "") + " " + d.swap + " " + (d.was || "") + " " + d.source + " " + (choices[d.id] || "")).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  let out = "", lastSec = null, lastGroup = null, buf = [];
+  const flush = () => { if (buf.length) { out += `<div class="grid">${buf.join("")}</div>`; buf = []; } };
+  for (const d of shown) {
+    if (d.section !== lastSec) { flush(); out += `<h2>${SECTIONS.find(x => x[0] === d.section)[1]}</h2>`; lastSec = d.section; lastGroup = null; }
+    if (d.group !== lastGroup) { flush(); out += `<h3>${esc(d.group)}</h3>`; lastGroup = d.group; }
+    buf.push(card(d));
+  }
+  flush();
+  const main = document.getElementById("main");
+  main.innerHTML = out || "<p>No signs match.</p>";
+  hydrate(main);
+  shownCount = shown.length;
+  stats();
+}
+
+const main = document.getElementById("main");
+main.addEventListener("input", e => {
+  const id = e.target.dataset.id; if (!id) return;
+  const v = e.target.value.trim();
+  if (v) choices[id] = v; else delete choices[id];
+  clearTimeout(e.target.saveT); e.target.saveT = setTimeout(() => persist(id), 400);
+  e.target.closest(".card").classList.toggle("chosen", !!v);
+  stats();
+});
+main.addEventListener("change", e => {
+  if (e.target.dataset.up) { setCustom(e.target.dataset.up, e.target.files[0]); return; }
+  if (e.target.dataset.fit) { fits[e.target.dataset.fit] = e.target.value; persist(e.target.dataset.fit); const c = main.querySelector(`canvas[data-prev="${e.target.dataset.fit}"]`); if (c) drawPreview(c, e.target.dataset.fit); }
+});
+main.addEventListener("click", e => {
+  const k = e.target.dataset.keep;
+  if (k) { choices[k] = "keep original"; persist(k); const i = document.querySelector(`input[data-id="${k}"]`); i.value = "keep original"; i.closest(".card").classList.add("chosen"); stats(); return; }
+  if (e.target.dataset.rm) { removeCustom(e.target.dataset.rm); return; }
+  if (e.target.dataset.rot) { const id = e.target.dataset.rot; rots[id] = ((rots[id] || 0) + 90) % 360; persist(id); refreshCard(id); return; }
+  const shot = e.target.closest(".shot[data-full]");
+  if (shot) { const lb = document.getElementById("lb"); lb.querySelector("img").src = shot.dataset.full; lb.style.display = "flex"; }
+});
+// drag & drop an image onto a card
+main.addEventListener("dragover", e => { const c = e.target.closest(".card"); if (c && e.dataTransfer.types.includes("Files")) { e.preventDefault(); c.classList.add("drop"); } });
+main.addEventListener("dragleave", e => { const c = e.target.closest(".card"); if (c && !c.contains(e.relatedTarget)) c.classList.remove("drop"); });
+main.addEventListener("drop", e => {
+  const c = e.target.closest(".card"); if (!c) return;
+  e.preventDefault(); c.classList.remove("drop");
+  const f = [...e.dataTransfer.files].find(f => f.type.startsWith("image/"));
+  if (f) setCustom(c.dataset.card, f); else toast("Drop an image file");
+});
+// paste an image while a card's box is focused
+document.addEventListener("paste", e => {
+  const c = document.activeElement && document.activeElement.closest && document.activeElement.closest(".card");
+  if (!c) return;
+  const item = [...(e.clipboardData || {}).items || []].find(i => i.type.startsWith("image/"));
+  if (item) { e.preventDefault(); setCustom(c.dataset.card, item.getAsFile()); }
+});
+document.getElementById("lb").addEventListener("click", e => { e.currentTarget.style.display = "none"; });
+["q", "sec", "state"].forEach(id => document.getElementById(id).addEventListener("input", render));
+
+// ---------------------------------------------------------------- export / import
+function download(name, text, type) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], {type}));
+  a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+const csvq = s => `"${String(s ?? "").replace(/"/g, '""')}"`;
+document.getElementById("exp").addEventListener("click", async () => {
+  const ids = DATA.map(d => d.id).filter(id => choices[id] || customs[id]);
+  const out = {version: 1, exported: new Date().toISOString(), signs: {}};
+  for (const id of ids) {
+    const d = BYID[id];
+    out.signs[id] = {original_sign: d.label, current_swap: d.swap, your_choice: choices[id] || "",
+                     source_texture: d.source, where: d.where};
+    if (customs[id]) { out.signs[id].fit = fits[id] || "logo"; out.signs[id].rotate = rots[id] || 0; out.signs[id].custom_image = await toDataURL(customs[id]); }
+  }
+  download("fh6_sign_choices.json", JSON.stringify(out), "application/json");
+  toast(`Exported ${ids.length} sign${ids.length === 1 ? "" : "s"}` + (Object.keys(customs).length ? ` incl. ${Object.keys(customs).length} custom image(s)` : ""));
+});
+document.getElementById("expcsv").addEventListener("click", () => {
+  const head = ["id", "original_sign", "current_swap", "your_choice", "custom_image", "fit", "source_texture", "where"];
+  const lines = [head.join(",")].concat(DATA.map(d => [d.id, d.label, d.swap, choices[d.id] || "", customs[d.id] ? "yes (in the full export)" : "",
+                                                       customs[d.id] ? (fits[d.id] || "logo") : "", d.source, d.where].map(csvq).join(",")));
+  download("fh6_sign_choices.csv", "﻿" + lines.join("\r\n"), "text/csv");
+});
+document.getElementById("imp").addEventListener("click", () => document.getElementById("impfile").click());
+document.getElementById("impfile").addEventListener("change", async e => {
+  const f = e.target.files[0]; if (!f) return;
+  const text = (await f.text()).replace(/^﻿/, "");
+  let n = 0;
+  if (f.name.toLowerCase().endsWith(".json")) {
+    let j; try { j = JSON.parse(text); } catch (err) { toast("That JSON file couldn't be read"); return; }
+    for (const [id, s] of Object.entries(j.signs || {})) {
+      if (!BYID[id]) continue;
+      if (s.your_choice) choices[id] = s.your_choice; else delete choices[id];
+      if (s.custom_image) { await storeImage(id, s.custom_image); fits[id] = s.fit || "logo"; rots[id] = s.rotate || 0; }
+      n++;
+    }
+  } else {
+    const rows = text.split(/\r?\n/).map(l => (l.match(/("([^"]|"")*"|[^,]*)(,|$)/g) || []).map(c => c.replace(/,$/, "").replace(/^"|"$/g, "").replace(/""/g, '"')));
+    const head = rows.shift() || [];
+    const iId = head.indexOf("id"), iC = head.indexOf("your_choice");
+    if (iId < 0 || iC < 0) { toast("CSV needs 'id' and 'your_choice' columns"); return; }
+    for (const r of rows) { if (r[iId] && BYID[r[iId]]) { if (r[iC]) choices[r[iId]] = r[iC]; else delete choices[r[iId]]; n++; } }
+  }
+  persist(); render(); toast(`Imported ${n} sign${n === 1 ? "" : "s"}`);
+  e.target.value = "";
+});
+
+(async () => {
+  db = await idb();
+  const local = {choices: {...choices}, fits: {...fits}, rots: {...rots}, customs: await idbAll()};
+  let st = null;
+  if (location.protocol.startsWith("http")) {
+    try { const r = await fetch("/api/state", {cache: "no-store"}); if (r.ok) st = await r.json(); } catch (e) {}
+  }
+  const where = document.getElementById("where");
+  if (st && st.server) {
+    SERVER = true;
+    choices = {}; fits = {}; rots = {};
+    for (const [id, s] of Object.entries(st.signs)) {
+      if (!BYID[id]) continue;
+      if (s.choice) choices[id] = s.choice;
+      fits[id] = s.fit || "logo"; rots[id] = s.rotate || 0;
+      if (s.image) customs[id] = s.image;
+    }
+    // anything saved only in this browser earlier is copied to disk (disk wins on conflicts)
+    let moved = 0;
+    for (const id of new Set([...Object.keys(local.choices), ...Object.keys(local.customs)])) {
+      if (!BYID[id] || choices[id] || customs[id]) continue;
+      if (local.customs[id]) { try { await storeImage(id, local.customs[id]); } catch (e) { continue; } }
+      if (local.choices[id]) choices[id] = local.choices[id];
+      fits[id] = local.fits[id] || "logo"; rots[id] = local.rots[id] || 0;
+      moved++;
+    }
+    if (moved) { persist(); toast(`Copied ${moved} choice(s) from this browser to disk`); }
+    where.textContent = "Saving to disk: " + st.folder;
+    where.className = "where ok";
+  } else {
+    Object.assign(customs, local.customs);
+    where.textContent = 'Saving in this browser only - to save to disk, open the catalogue with "Open sign catalogue.bat"';
+    where.className = "where warn";
+  }
+  render();
+})();
+</script>
+</body>
+</html>
