@@ -19,14 +19,15 @@ No game files are included; you build the textures from your own copy of the gam
 ## How it works
 
 FH6 keeps world textures in large `media/Tracks/Brio/GeoChunk*.minizip` archives (format PGZP v101)
-and does not load loose override files for them, so the mod patches entries in place. The patcher
-(`patcher/fh6_signs.py`) is built to be safe and survive game updates:
+and does not load loose override files for them, so the mod patches entries in place. The player
+patcher is a plain PowerShell script (`patcher/FH6JapaneseSigns.ps1`, run by the `.bat` files — no
+executables). Compression is done at release time, so the script only checks and swaps bytes:
 
 * entries are located **by name** (`ChunkContentsMiniZip*.txt`), never by offset;
-* each entry is only patched if it hashes to the **exact vanilla data** the mod was built from
-  (`mod/manifest.json`); if a game update changed anything, nothing is patched;
-* original slot bytes are backed up before writing; LZ4 entries are re-encoded at **exactly the
-  original compressed length** (the game refuses to start otherwise);
+* a slot is only patched if its bytes hash (SHA-256) to the **exact vanilla slot** the mod was built
+  for (`mod/manifest.json`); if a game update changed anything, nothing is patched;
+* original slot bytes are backed up before writing; replacements are pre-built at **exactly the
+  original slot length** (the game refuses to start otherwise);
 * every write is read back and verified; any failure rolls the whole run back;
 * *Disable* restores the backups byte for byte, only where the mod's data is still present.
 
@@ -34,7 +35,8 @@ and does not load loose override files for them, so the mod patches entries in p
 
 | Path | What |
 |---|---|
-| `patcher/fh6_signs.py` | player-facing patcher (enable / disable / status) → `FH6JapaneseSigns.exe` |
+| `patcher/FH6JapaneseSigns.ps1` | player patcher (enable / disable / status), shipped with `.bat` launchers |
+| `patcher/fh6_signs.py` | alternative Python patcher (name lookup + on-the-fly re-encoding, `--partial`); dev use |
 | `tools/` | extraction, texture decoding/encoding, sign builders, release packaging |
 | `tools/jobs_*.py` | what gets replaced where (plain textures, tinted sign masks, user choices) |
 | `catalogue/choices/` | per-sign decisions + custom artwork from the sign catalogue; `enabled_brands.json` switches brands on/off |

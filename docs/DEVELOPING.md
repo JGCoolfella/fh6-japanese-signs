@@ -3,7 +3,7 @@
 Everything runs on Windows with Python 3.10+.
 
 ```
-pip install numpy pillow scipy lz4 texture2ddecoder opencv-python-headless pyinstaller
+pip install numpy pillow scipy lz4 texture2ddecoder opencv-python-headless
 ```
 
 Download `texconv.exe` (Microsoft DirectXTex, MIT) from
@@ -20,7 +20,7 @@ Clone this repository **inside the game folder** (default: tools assume `<game>/
 | Build every modded file into `build/final/` | `python tools/build_all.py` |
 | Install on your own game (dev) | `python tools/install.py patch final` |
 | Restore vanilla (dev) | `python tools/install.py uninstall` |
-| Package a player release | `python tools/make_release.py <version>` → `dist/FH6JapaneseSigns-<version>.zip` |
+| Package a player release | `python tools/make_release.py <version>` → `dist/FH6JapaneseSigns-<version>.zip` (game must be vanilla) |
 
 `extract/` must always hold vanilla data; `install.py` keeps byte backups in `backup/` and a record
 in `installed.json`. Builders read originals through `install.original_entry()` so rebuilding after
@@ -59,10 +59,12 @@ patching is safe.
 
 1. `python tools/build_all.py`
 2. `python tools/install.py patch final`, test in game.
-3. `python tools/make_release.py 0.1.0` and test the zip on a vanilla game:
-   `python tools/install.py uninstall`, extract the zip into the game folder,
-   run `Enable mod.bat`, check in game, run `Disable mod.bat`.
-4. Upload `dist/FH6JapaneseSigns-<version>.zip` to Nexus Mods / GitHub Releases.
+3. Make the game vanilla (`python tools/install.py uninstall`), then `python tools/make_release.py 0.1.0`.
+   It pre-builds each replacement slot from the vanilla slot, so the player script needs no compression.
+4. Test the zip: extract it into the game folder, run `Enable mod.bat`, check in game, `Disable mod.bat`.
+   A release is tied to the game build it was made from; after a game update that changes any of
+   these textures, rebuild and re-release (the script refuses to patch a changed game).
+5. Upload `dist/FH6JapaneseSigns-<version>.zip` to Nexus Mods / GitHub Releases.
 
 ## Dev install vs. player patcher
 

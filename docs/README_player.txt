@@ -20,7 +20,9 @@ INSTALL
    (the folder that contains forzahorizon6.exe).
 3. Double-click  "Enable mod.bat".
 
-Takes a minute or two. Nothing is changed unless every texture checks out.
+Takes a few seconds. Nothing is changed unless every texture checks out.
+The .bat files run FH6JapaneseSigns.ps1, a plain-text PowerShell script you
+can open and read - there are no executables in this mod.
 
 
 SWITCH BACK TO VANILLA / UNINSTALL
