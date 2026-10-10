@@ -77,6 +77,17 @@ def slot_payload(data, raw, size, codec):
     return out
 
 
+def game_version():
+    """FileVersion of forzahorizon6.exe (e.g. 6.440.853.0), read from its version resource."""
+    exe = os.path.join(install.GAME, "forzahorizon6.exe")
+    try:
+        import subprocess
+        return subprocess.run(["powershell", "-NoProfile", "-Command", f"(Get-Item '{exe}').VersionInfo.FileVersion"],
+                              capture_output=True, text=True).stdout.strip() or None
+    except Exception:
+        return None
+
+
 def main():
     version = sys.argv[1] if len(sys.argv) > 1 else "0.0.0-dev"
     out = os.path.join(DIST, f"{APPDIR}-{version}")
@@ -109,6 +120,7 @@ def main():
                         "vanilla_slot_sha256": sha(raw), "mod_slot_sha256": sha(payload),
                         "vanilla_sha256": sha(vanilla), "mod_sha256": sha(data), "path": rel})
     manifest = {"mod": "FH6 Japanese Signs", "version": version, "built": datetime.date.today().isoformat(),
+                "game_version": game_version(),
                 "archive_format": "PGZP v101", "entries": entries}
     json.dump(manifest, open(os.path.join(app, "mod", "manifest.json"), "w", encoding="utf-8"), indent=1)
     shutil.copy(os.path.join(ROOT, "patcher", "FH6JapaneseSigns.ps1"), app)

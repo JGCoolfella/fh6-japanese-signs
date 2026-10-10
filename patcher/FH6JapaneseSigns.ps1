@@ -134,6 +134,7 @@ function Do-Enable($track, $manifest) {
     if ($c.changed -or $c.missing) {
         Write-Host "`n  The game files don't match the version this mod was built for (a game update changed"
         Write-Host "  some textures). Nothing was patched. Please check for an updated version of the mod."
+        if ($manifest.game_version) { Write-Host "  (This version of the mod was built for game version $($manifest.game_version).)" }
         return $false
     }
     $bdir = Join-Path $ModDir "backup"

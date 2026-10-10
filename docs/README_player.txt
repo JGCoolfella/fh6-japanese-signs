@@ -9,8 +9,9 @@ This first release covers mainly convenience stores:
   CHROMA             -> UNIQLO
   GAME / Level Up    -> Taito Station
 
-Single-player / offline immersion mod. Not affiliated with any of these brands,
-Microsoft or Playground Games.
+Built for game version 6.440.853.0. Made for single-player / offline play - see
+ONLINE PLAY below. Not affiliated with any of these brands, Microsoft or
+Playground Games.
 
 
 INSTALL
@@ -56,11 +57,18 @@ and asks for a newer version of the mod (it never half-applies). If an update
 already replaced the archives, the mod is simply gone - re-enable it.
 
 
-ONLINE PLAY
------------
-Made for single-player/offline use. Modifying game files may be against the
-game's terms for online play - disable the mod before playing online. Use at
-your own risk.
+ONLINE PLAY - PLEASE READ
+-------------------------
+This mod changes game files on your PC, so it stays active in online sessions
+too (only you see the new signs - other players see their own game). It is not
+designed or recommended for online play: playing online with modified game
+files may breach the game's terms of service and could lead to restrictions,
+suspension or a ban. If you play online, run "Disable mod.bat" first.
+
+DISCLAIMER: You use this mod entirely at your own risk. It is provided as is,
+without any warranty. The author accepts no responsibility for bans, account
+action, lost progress, game crashes or any other problem that results from
+using it.
 
 
 Source, issues, how to build: https://github.com/JGCoolfella/fh6-japanese-signs
