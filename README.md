@@ -51,4 +51,10 @@ See [docs/DEVELOPING.md](docs/DEVELOPING.md).
 
 Code: MIT (see `LICENSE`). Brand names and logos are trademarks of their owners and are used for a
 non-commercial fan modification; this project is not affiliated with them, Microsoft or Playground
-Games. Intended for single-player / offline play.
+Games.
+
+**Online play:** the mod changes local game files, so it also stays active online, but it is made
+for single-player / offline play and is not recommended online — playing online with modified files
+may breach the game's terms of service and could lead to restrictions or a ban. Disable it first.
+Use entirely at your own risk; the author accepts no responsibility for bans, account action, lost
+progress or any other issues resulting from its use.
